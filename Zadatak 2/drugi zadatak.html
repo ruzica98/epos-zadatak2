@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>src="img/2.png"domaci</title>
+</head>
+<body>  
+<div id="prvaTri" >
+    <div id="prvi" >
+        <img src="img/1.png" />
+        <img src="img/2.png" />
+        <img src="img/3.png" />
+        <img src="img/4.png" />
+        <img src="img/5.png" />
+
+    </div>
+    <div id="drugi">
+        <img src="img/1.png" />
+        <img src="img/2.png" />
+        <img src="img/3.png" />
+        <img src="img/4.png" />
+        <img src="img/5.png" />
+    </div>
+    <div id="treci">
+        <img src="img/1.png"  />
+        <img src="img/2.png" />
+        <img src="img/3.png" />
+        <img src="img/4.png" />
+        <img src="img/5.png" />
+    </div>
+</div>
+<div id="drugaTri">
+    <div id="cetvrti">
+        <img src="img/1.png"  />
+        <img src="img/2.png" />
+        <img src="img/3.png" />
+        <img src="img/4.png" />
+        <img src="img/5.png" />
+    </div>
+    <div id="peti">
+        <img src="img/1.png"  />
+        <img src="img/2.png" />
+        <img src="img/3.png" />
+        <img src="img/4.png" />
+        <img src="img/5.png" />
+    </div>
+    <div id="sesti">
+        <img src="img/1.png"  />
+        <img src="img/2.png" />
+        <img src="img/3.png" />
+        <img src="img/4.png" />
+        <img src="img/5.png" />
+    </div>
+</div>
+</body>
+<style>
+    #prvaTri{display: flex; }
+    #drugaTri{display: grid; grid-auto-flow: column; grid-template-columns: 20% auto 30%;}
+    img{
+        height: 70px;
+        width: 70px;
+    }
+    #prvi{
+    flex: 1;
+    display: flex;
+    padding: 10px;
+        justify-content: flex-start;
+}
+    #drugi{
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#treci{
+    flex:1;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+#cetvrti{
+    display: grid;
+    padding: 10px;
+    justify-content: start;
+}
+
+#peti{
+    display: grid;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#sesti{
+    display: grid;
+    padding: 10px;
+    justify-content: end;
+}
+
+
+a{
+    padding: 10px;
+    color: white;
+}
+html,body{
+    background-color: grey;
+}
+
+@media (max-width: 1150px) {
+  #prvaTri{
+      flex-flow: column;
+  }
+  #drugaTri{
+      grid-auto-flow: row;
+  }
+}
+
+</style>
+</html>
